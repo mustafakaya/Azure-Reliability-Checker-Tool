@@ -1,4 +1,4 @@
-# Azure-Proactive-Resiliency-Checker-Tool
+# Azure Proactive Resiliency Checker Tool
 
 This project contains a PowerShell script that is based on Azure Proactive Resiliency Library's data. The script clones the library to a local directory and then scans all folders and files and runs KQL queries. Finally, it exports the resources to a CSV file with recommendation ID, subscription ID, and resource ID.
 
