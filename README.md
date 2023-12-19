@@ -20,8 +20,9 @@ You will also need to provide the following inputs:
 
 ## Usage
 
-1. Run the script by typing `.\AzureProactiveResiliencyCheckerTool.ps1` and pressing Enter.
-2. Provide the required inputs inside of script.
+1. Provide the required inputs inside of script.
+2. Run the script by typing `.\AzureProactiveResiliencyCheckerTool.ps1` and pressing Enter.
+
 
 ## References
 
