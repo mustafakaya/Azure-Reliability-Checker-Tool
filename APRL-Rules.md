@@ -1,4 +1,4 @@
-This page lists all of the Azure Services for which the APRL has guidance, recommendations and queries for.
+This page lists all of the Azure Services for which the APRL has guidance, recommendations and queries.
 
 ## Azure Databricks Summary of Recommendations
 
@@ -98,3 +98,16 @@ This page lists all of the Azure Services for which the APRL has guidance, recom
 | [VM-20 - Enable Insights to get more visibility into the health and performance of your virtual machine](#vm-20---enable-vm-insights)                                                                                              |  Low   | Verified |         Yes          |
 | [VM-21 - Diagnostic Settings should be configured for all Azure Resources](#vm-21---configure-diagnostic-settings-for-all-azure-resources)                                                                                         |  Low   | Verified |         No         |
 | [VM-22 - Use maintenance configurations for the Virtual Machine](#vm-22---use-maintenance-configurations-for-the-vms) | High | Preview | Yes |
+
+## AKS Summary of Recommendations
+
+| Recommendation                                                                                                                                | Impact |  State  | ARG Query Available |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :-----: | :-----------------: |
+| [AKS-1 - Deploy AKS cluster across availability zones](#aks-1---deploy-aks-cluster-across-availability-zones)                                 |  High  | Preview |         Yes         |
+| [AKS-2 - Isolate system pods](#aks-2---isolate-system-pods)                                                                                   |  High  | Preview |         Yes         |
+| [AKS-3 - Enable AKS-managed Azure AD integration](#aks-3---enable-aks-managed-azure-ad-integration)                                           |  High  | Preview |         Yes         |
+| [AKS-4 - Configure Azure CNI networking for dynamic allocation of IPs](#aks-4---configure-azure-cni-networking-for-dynamic-allocation-of-ips) | Medium | Preview |         Yes         |
+| [AKS-5 - Enable the cluster autoscaler on an existing cluster](#aks-5---enable-the-cluster-autoscaler-on-an-existing-cluster)                 |  High  | Preview |         Yes         |
+| [AKS-6 - Plan for multi-region deployment](#aks-6---plan-for-multi-region-deployment)                                                           |  High  | Preview |         No          |
+| [AKS-7 - Back up Azure Kubernetes Service](#aks-7---back-up-azure-kubernetes-service)                                                         |  Low   | Preview |         No          |
+
