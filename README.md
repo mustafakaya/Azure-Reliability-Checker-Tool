@@ -9,7 +9,6 @@ This script is developed based on Azure Proactive Resiliency Library's data. Azu
 ### References
 
 - [Azure Proactive Resiliency Library](https://azure.github.io/Azure-Proactive-Resiliency-Library/)
-- [Azure-Proactive-Resiliency-Library](https://github.com/Azure/Azure-Proactive-Resiliency-Library)
 
 ## Getting Started
 
