@@ -1,16 +1,13 @@
-﻿# Clone the repository
-#$localRepoPath = "C:\githubdirectory"
-$localRepoPath = "YOUR_ACCESS_TOKEN"
-#$OutputFilePath = "C:\temp\output-17.csv"
-$OutputFilePath = "OUTPUT_FILE_PATH"
-
 # Set the repository URL and root directory
 $repo = "https://github.com/Azure/Azure-Proactive-Resiliency-Library"
 $rootDirectory = "docs/content/services"
 
+
 git clone $repo $localRepoPath
 
 $categoryFolders = Get-ChildItem -Path "$localRepoPath\$rootDirectory" -Directory
+
+$comment = "under-development"
 
 # Loop through each category folder
 foreach ($categoryFolder in $categoryFolders) {
@@ -31,7 +28,7 @@ foreach ($categoryFolder in $categoryFolders) {
 
             # Get the KQL file
             $kqlFile = Get-ChildItem -Path "$localRepoPath\$rootDirectory\$categoryName\$resourceType\code\$recommendationIdFolder" -Filter "*.kql" -File
-
+            
             # Read the KQL query from the file
             $kqlQuery = ""
             if ($kqlFile.Extension -eq ".kql") {
@@ -42,10 +39,15 @@ foreach ($categoryFolder in $categoryFolders) {
                 $comment = $kqlLines[1]
 
                 if($kqlQuery -notlike '*under-development*'){
-
-                    # Run the Kusto query using Azure Resource Graph
-                    $queryResult = Search-AzGraph -Query $kqlQuery
-                    $comment=$kqlQuery
+                        # Run the Kusto query using Azure Resource Graph
+                        $queryResult = Search-AzGraph -Query $kqlQuery
+                        if($queryResult -eq $null){
+                            $comment="Not valid query."
+                        }else{
+                            $comment=$kqlQuery
+                        }
+                }else{
+                    $comment = "under-development"
                 }
             } elseif ($kqlFile.Extension -eq ".ps1") {
                 #$kqlQuery = Get-Content -Path $kqlFile.FullName -Raw
@@ -53,7 +55,6 @@ foreach ($categoryFolder in $categoryFolders) {
                 $comment=" That's ps script"
             } else {
                 $comment=" Not valid query. That might be PS script!"
-                Write-Output "Invalid file format. Only .kql and .ps1 files are supported."
             }
             
             $columnObject = [PSCustomObject]@{
