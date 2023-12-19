@@ -111,3 +111,59 @@ This page lists all of the Azure Services for which the APRL has guidance, recom
 | [AKS-6 - Plan for multi-region deployment](#aks-6---plan-for-multi-region-deployment)                                                           |  High  | Preview |         No          |
 | [AKS-7 - Back up Azure Kubernetes Service](#aks-7---back-up-azure-kubernetes-service)                                                         |  Low   | Preview |         No          |
 
+## Container Registry Summary of Recommendations
+
+| Recommendation                                                                                                                                                                                                                     | Impact |  State  | ARG Query Available |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :-----: | :-----------------: |
+| [CR-1 - Use Premium tier for critical production workloads](#cr-1---use-premium-tier-for-critical-production-workloads)                                                                                                            |  High  | Preview |         Yes         |
+| [CR-2 - Enable zone redundancy](#cr-2---enable-zone-redundancy)                                                                                                                                                                    |  High  | Preview |         Yes         |
+| [CR-3 - Enable geo-replication](#cr-3---enable-geo-replication)                                                                                                                                                                    |  High  | Preview |         Yes         |
+| [CR-4 - Maximize pull performance](#cr-4---maximize-pull-performance)                                                                                                                                                              |  High  | Preview |         No          |
+| [CR-5 - Use Repository namespaces](#cr-5---use-repository-namespaces)                                                                                                                                                              |  Low   | Preview |         No          |
+| [CR-6 - Move Container Registry to a dedicated resource group](#cr-6---move-container-registry-to-a-dedicated-resource-group)                                                                                                      |  Low   | Preview |         No         |
+| [CR-7 - Manage registry size](#cr-7---manage-registry-size)                                                                                                                                                                        | Medium | Preview |         No         |
+| [CR-8 - Disable anonymous pull access](#cr-8---disable-anonymous-pull-access)                                                                                                                                                      | Medium | Preview |         Yes         |
+| [CR-9 - Use an Azure managed identity to authenticate to an Azure container registry](#cr-9---use-an-azure-managed-identity-to-authenticate-to-an-azure-container-registry)                                                        | Medium | Preview |         No         |
+| [CR-10 - Configure Diagnostic Settings for all Azure Resources](#cr-10---configure-diagnostic-settings-for-all-azure-resources)                                                                                                    | Medium | Preview |         No         |
+| [CR-11 - Monitor Azure Container Registry with Azure Monitor](#cr-11---monitor-azure-container-registry-with-azure-monitor)                                                                                                        | Medium | Preview |         No          |
+| [CR-12 - Enable soft delete policy](#cr-12---enable-soft-delete-policy)                    
+
+## Cosmos DB Summary of Recommendations
+
+| Recommendation                                    | Impact         |  State   | ARG Query Available |
+| :------------------------------------------------ | :---------------------------------------------------------------------: | :------: | :-----------------: |
+| [COSMOS-1 – Configure at least two regions for high availability](#cosmos-1---configure-at-least-two-regions-for-high-availability) | High | Preview  |         Yes         |
+| [COSMOS-2 – Enable service-managed failover for multi-region accounts with single write region](#cosmos-2---enable-service-managed-failover-for-multi-region-accounts-with-single-write-region)  | High | Preview |         No          |
+| [COSMOS-3 – Evaluate multi-region write capability](#cosmos-3---evaluate-multi-region-write-capability)  | High | Preview |         Yes          |
+| [COSMOS-4 – Choose appropriate consistency mode reflecting data durability requirements](#cosmos-4---choose-appropriate-consistency-mode-reflecting-data-durability-requirements)  | High | Preview |         No          |
+| [COSMOS-5 – Configure continuous backup mode](#cosmos-5---configure-continuous-backup-mode)  | High | Preview |         Yes          |
+| [COSMOS-6 – Ensure query results are fully drained](#cosmos-6---ensure-query-results-are-fully-drained)  | High | Preview |         No          |
+| [COSMOS-7 – Maintain singleton pattern in your client](#cosmos-7---maintain-singleton-pattern-in-your-client)  | Medium | Preview |         No          |
+| [COSMOS-8 – Implement retry logic in your client](#cosmos-8---implement-retry-logic-in-your-client)  | Medium | Preview |         No          |
+| [COSMOS-9 – Monitor Cosmos DB health and set up alerts](#cosmos-9---monitor-cosmos-db-health-and-set-up-alerts)  | Medium | Preview |         No          |
+
+## Database for PostgreSQL Summary of Recommendations
+
+{{< table style="table-striped" >}}
+| Recommendation                                    |  Category                                                               |  Impact         |  State            | ARG Query Available |
+| :------------------------------------------------ | :---------------------------------------------------------------------: | :------:        | :------:          | :-----------------: |
+| [PSQL-1 - Enable HA with zone redundancy](#psql-1---enable-ha-with-zone-redundancy) | High Availability | High | Preview  |         Yes         |
+
+## Redis Cache Summary of Recommendations
+
+{{< table style="table-striped" >}}
+| Recommendation                                    |  Category                                                               |  Impact         |  State            | ARG Query Available |
+| :------------------------------------------------ | :---------------------------------------------------------------------: | :------:        | :------:          | :-----------------: |
+| [REDIS-1 - Enable zone redundancy for Azure Cache for Redis](#redis-1---enable-zone-redundancy-for-azure-cache-for-redis) | High Availability | High | Preview  |
+
+## Azure SQL Summary of Recommendations
+
+{{< table style="table-striped" >}}
+| Recommendation                                                                                                                                                                  | Impact  |  State  | ARG Query Available |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----:  | :-----: | :-----------------: |
+| [SQLDB-1 - Use Active Geo Replication to Create a Readable Secondary in Another Region](#sqldb-1---use-active-geo-replication-to-create-a-readable-secondary-in-another-region) | High    | Preview |         No          |
+| [SQLDB-2 - Use Auto Failover Groups that can include one or multiple databases, typically used by the same application](#sqldb-2---use-auto-failover-groups-that-can-include-one-or-multiple-databases-typically-used-by-the-same-application)                                                           |  High   | Preview |         No          |
+| [SQLDB-3 - Use a Zone-Redundant database](#sqldb-3---use-a-zone-redundant-database)                                                                                             | Medium  | Preview |         Yes          |
+| [SQLDB-4 - Implement Retry Logic](#sqldb-4---implement-retry-logic)                                                                                                             |  High   | Preview |         No          |
+| [SQLDB-5 - Monitor your Azure SQL Database in near-real time to detect reliability incidents](#sqldb-5---monitor-your-azure-sql-database-in-near-real-time-to-detect-reliability-incidents)                                                                                    |  High   | Preview |         No          |
+| [SQLDB-6 - Back up your keys](#sqldb-6---back-up-your-keys)                              
