@@ -9,7 +9,7 @@ This script is developed based on Azure Proactive Resiliency Library's data. Azu
 ### References
 
 - [Azure Proactive Resiliency Library](https://azure.github.io/Azure-Proactive-Resiliency-Library/)
-
+- [Well-Architected Framework -  Reliability](https://learn.microsoft.com/en-us/azure/well-architected/reliability/)
 ## Getting Started
 
 To use this script, you will need to have the following installed on your machine:
