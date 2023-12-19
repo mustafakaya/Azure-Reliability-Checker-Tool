@@ -144,21 +144,21 @@ This page lists all of the Azure Services for which the APRL has guidance, recom
 
 ## Database for PostgreSQL Summary of Recommendations
 
-{{< table style="table-striped" >}}
+
 | Recommendation                                    |  Category                                                               |  Impact         |  State            | ARG Query Available |
 | :------------------------------------------------ | :---------------------------------------------------------------------: | :------:        | :------:          | :-----------------: |
 | [PSQL-1 - Enable HA with zone redundancy](#psql-1---enable-ha-with-zone-redundancy) | High Availability | High | Preview  |         Yes         |
 
 ## Redis Cache Summary of Recommendations
 
-{{< table style="table-striped" >}}
+
 | Recommendation                                    |  Category                                                               |  Impact         |  State            | ARG Query Available |
 | :------------------------------------------------ | :---------------------------------------------------------------------: | :------:        | :------:          | :-----------------: |
 | [REDIS-1 - Enable zone redundancy for Azure Cache for Redis](#redis-1---enable-zone-redundancy-for-azure-cache-for-redis) | High Availability | High | Preview  |
 
 ## Azure SQL Summary of Recommendations
 
-{{< table style="table-striped" >}}
+
 | Recommendation                                                                                                                                                                  | Impact  |  State  | ARG Query Available |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----:  | :-----: | :-----------------: |
 | [SQLDB-1 - Use Active Geo Replication to Create a Readable Secondary in Another Region](#sqldb-1---use-active-geo-replication-to-create-a-readable-secondary-in-another-region) | High    | Preview |         No          |
