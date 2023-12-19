@@ -3,6 +3,10 @@ $repo = "https://github.com/Azure/Azure-Proactive-Resiliency-Library"
 $rootDirectory = "docs/content/services"
 
 
+# Clone the repository
+$localRepoPath = "YOUR_LOCALPATH_TO_CLONE_REPO"
+$OutputFilePath = "OUTPUT_FILE_PATH"
+
 git clone $repo $localRepoPath
 
 $categoryFolders = Get-ChildItem -Path "$localRepoPath\$rootDirectory" -Directory
